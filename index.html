@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Practice Writing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-purple.min.css"/> 
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body onload="init()">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="logo" style="left:-5%;"></div>
+                <!-- Header Title -->
+                <span class="mdl-layout-title"><h1 class="spinnycolor">Practice Writing!</h1></span>
+            </div>
+            <!-- Tab Container with Tab links -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect"> 
+                <!-- class is-active to show currently active tab -->
+                <a href="#fixed-tab-1" id="tabOne" class="mdl-layout__tab is-active">ABC's</a>
+                <a href="#fixed-tab-1" id="tabTwo" class="mdl-layout__tab">World Map</a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <!-- Tab 1 -->  
+            <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                <div class="page-content">
+                    <div class="center">
+                        <label for="colorpicker" class="toolbar">Color Picker:</label>
+                        <input type="color" id="colorpicker" value="#000000 ">
+                
+                        <label for="sizeopt" class="toolbar">Pixel size:</label>
+                        <input type="text" id="sizeopt" size="5" value="2">
+                
+                        <label for="clear" class="toolbar">Clear Canvas:</label>
+                        <input type="button" id="clear" onclick="erase()">
+                
+                        <!---<label for="undo" class="toolbar">Undo:</label>-->
+                        <input type="button" id="undo" onclick="undo()">
+                
+                        <!---<label for="redo" class="toolbar">Redo:</label>-->
+                        <input type="button" id="redo" onclick="redo()">
+                
+                        <label for="userString" id="userLabel" class="toolbar">Text: </label>
+                        <input type="text" id="userString" size="10">
+                           
+                        
+                        <div class="canvasMap">
+                            <a href="https://ibb.co/Qp2WJ3r"><img src="https://i.ibb.co/tQ70HT8/worldMap.png" alt="worldMap" id="worldMap" border="0"></a>
+                        </div>
+                        <canvas id="drawCanvas" width="1950" height="669" style="position: absolute;top: 25%;left: 0%;border: 2px solid;overflow: hidden;"></canvas>
+                        <script type="text/javascript" src="assets/js/main.js"></script>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Tab 2 -->
+            <!--
+            <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                <div class="page-content">
+                    <div class="center">
+                    </div>
+                </div>
+            </section>-->
+        </main>
+    </div>
+</body>

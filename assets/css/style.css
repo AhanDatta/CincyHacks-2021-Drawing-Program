@@ -1,0 +1,142 @@
+.pixel{
+    width:1px;
+    height:1px;
+    position:absolute;
+    display:block;
+}
+.pixel.black{
+    background-color:#000;
+}
+.grid{
+    width:300px;
+    height:300px;
+    border:solid #555 thin;
+}
+#clear {
+    background: url("images/eraser.png");
+    width: 46px;
+    height: 26px;
+    border: none;
+    display: inline-block;
+}
+#clear:hover {
+    background: url("images/eraser2.png");
+}
+#undo {
+    background: url("images/undo.png");
+    width: 29px;
+    height: 26px;
+    border: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#redo {
+    background: url("images/redo.png");
+    width: 29px;
+    height: 26px;
+    border: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.subtitle {
+    text-align: right;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    animation-name: epilepsy;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    overflow: hidden;
+}
+html {
+    max-height:100%;
+}
+.center{
+    text-align: center;
+}
+.mdl-layout__tab {
+    font-size: 40px;
+}
+
+.spinnycolor {
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 2vw;
+	width: 100%;
+    vertical-align: center;
+	background: linear-gradient(
+		60deg,
+		hsl(0, 75%, 50%) 10%,
+		hsl(20, 75%, 50%) 10%,
+		hsl(20, 75%, 50%) 25%,
+		hsl(50, 75%, 50%) 25%,
+		hsl(50, 75%, 50%) 40%,
+		hsl(130, 75%, 50%) 40%,
+		hsl(130, 75%, 50%) 55%,
+		hsl(200, 75%, 50%) 55%,
+		hsl(200, 75%, 50%) 70%,
+		hsl(260, 75%, 50%) 70%,
+		hsl(260, 75%, 50%) 85%,
+		hsl(0, 75%, 50%) 85%
+	);
+
+	text-shadow: 0.5px -0.1vw #fff4;
+	color: #fff;
+	-webkit-background-clip: text;
+   	-webkit-text-fill-color: transparent;
+   	animation: 10s ScrollyColor linear infinite,
+   	3s Always ease alternate infinite;
+}
+
+@keyframes ScrollyColor {
+	100% { background-position: 100vw 0px; }
+}
+
+@keyframes Always {
+	100% { transform: scale(1.1);}
+}
+
+.mdl-layout__header-row {
+    background-color: rgb(174, 183, 201);
+}
+.mdl-layout__tab {
+    background-color: rgb(174, 183, 201);
+}
+.mdl-layout__drawer {
+    background-color: rgb(174, 183, 201);
+}
+
+.logo{
+    background: url("images/pencilicon.png");
+    width: 48px;
+    height: 48px;
+}
+.logo:hover{
+    background: url("images/penciliconsans.png");
+    width: 48px;
+    height: 48px;
+}
+.canvasMap {
+    width: 1950px;
+    height: 669px;
+    position: absolute;
+    top: 27%;
+}
+.subtitle{
+    position: absolute;
+    right:20%;
+}
+.toolbar {
+    font-family: "Florence", cursive;
+}
+.mdl-layout__tab-bar {
+    font-family: Helvetica, Sans-Serif;
+    
+}
+#worldMap {
+    width: 65%;
+}
